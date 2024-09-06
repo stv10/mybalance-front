@@ -1,0 +1,23 @@
+<main class="container-login">
+    <section class="header">
+        <h2 class="title">Login</h2>
+        <p class="auxiliar-text">Welcome back!</p>
+    </section>
+
+    <form [formGroup]="loginForm" (ngSubmit)="beginLogin()" class="form-login">
+
+        <div class="container-flex-center">
+            <label for="username">Username</label>
+            <input type="text" formControlName="username" name="username">
+        </div>
+
+        <div class="container-flex-center">
+            <label for="password">Password</label>
+            <input type="password" formControlName="password" name="password">
+            <a href="" class="auxiliar-text forgot-password-text">Forgot password</a>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Login</button>
+    </form>
+
+</main>
